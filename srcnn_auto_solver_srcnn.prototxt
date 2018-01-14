@@ -1,0 +1,15 @@
+train_net: "srcnn_auto_train_srcnn.prototxt"
+test_net: "srcnn_auto_test_srcnn.prototxt"
+test_iter: 0
+test_interval: 1000
+base_lr: 0.000001
+lr_policy: "step"
+gamma: 0.1
+display: 100
+stepsize: 1000
+max_iter: 20000
+momentum: 0.9
+weight_decay: 0.005
+snapshot: 1000
+snapshot_prefix: "snapshot/"
+solver_mode: GPU
